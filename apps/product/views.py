@@ -260,20 +260,18 @@ class ListBySearchView(APIView):
                         category__in=filtered_categories)
 
         # Filtrar por precio
-        if price_range == '1 - 19':
-            product_results = product_results.filter(price__gte=1)
-            product_results = product_results.filter(price__lt=20)
-        elif price_range == '20 - 39':
-            product_results = product_results.filter(price__gte=20)
-            product_results = product_results.filter(price__lt=40)
-        elif price_range == '40 - 59':
-            product_results = product_results.filter(price__gte=40)
-            product_results = product_results.filter(price__lt=60)
-        elif price_range == '60 - 79':
-            product_results = product_results.filter(price__gte=60)
-            product_results = product_results.filter(price__lt=80)
-        elif price_range == 'More than 80':
-            product_results = product_results.filter(price__gte=80)
+        if price_range == '10.000 - 15.000':
+            product_results = product_results.filter(price__gte=10000)
+            product_results = product_results.filter(price__lt=15000)
+        elif price_range == '15.000 - 20.000':
+            product_results = product_results.filter(price__gte=15001)
+            product_results = product_results.filter(price__lt=20000)
+        elif price_range == '20.000 - 25.000':
+            product_results = product_results.filter(price__gte=20001)
+            product_results = product_results.filter(price__lt=15000)
+
+        elif price_range == 'More than 25.000':
+            product_results = product_results.filter(price__gte=25000)
         
         #Filtrar producto por sort_by
         if order == 'desc':
