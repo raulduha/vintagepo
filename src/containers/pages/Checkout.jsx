@@ -57,7 +57,7 @@ const Checkout = ({
         city: '',
         state_province_region: '',
         postal_zip_code: '',
-        country_region: 'Peru',
+        country_region: 'chile',
         telephone_number: '',
         coupon_name: '',
         shipping_id: 0,
