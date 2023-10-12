@@ -1,20 +1,25 @@
 /* This example requires Tailwind CSS v2.0+ */
 export default function Example() {
-    return (
-      <div className="relative bg-white overflow-hidden">
-        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
-            <div className="sm:max-w-lg">
-              <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
-              </h1>
-              <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
-                if you live or die.
-              </p>
-            </div>
-            <div>
-              <div className="mt-10">
+  return (
+    <div className="relative bg-white overflow-hidden">
+      <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
+          <div className="sm:min-w-lg">
+            {/* Reemplaza el texto con la etiqueta de video */}
+            <video
+              autoPlay
+              muted
+              className="w-full h-auto sm:w-60 sm:h-160 lg:w-160 lg:h-160" // Aumenta el tamaño aquí
+            >
+              <source
+                src="/vintagevideo2.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no admite la reproducción de videos.
+            </video>
+          </div>
+          <div>
+            <div className="mt-10">
                 {/* Decorative image grid */}
                 <div
                   aria-hidden="true"

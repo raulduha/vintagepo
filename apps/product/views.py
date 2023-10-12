@@ -268,10 +268,10 @@ class ListBySearchView(APIView):
             product_results = product_results.filter(price__lt=20000)
         elif price_range == '20.000 - 25.000':
             product_results = product_results.filter(price__gte=20001)
-            product_results = product_results.filter(price__lt=15000)
+            product_results = product_results.filter(price__lt=25000)
 
         elif price_range == 'More than 25.000':
-            product_results = product_results.filter(price__gte=25000)
+            product_results = product_results.filter(price__gte=25001)
         
         #Filtrar producto por sort_by
         if order == 'desc':

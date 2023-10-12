@@ -221,10 +221,10 @@ function Navbar({
           <div>
             <Link to="/" className="flex">
               <span className="sr-only">Workflow</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt=""
+                <img
+                className="h-12 w-auto sm:h-16"
+                src="/vintagelogo.jpeg"
+                alt="Logo de VNTAGE PO"
               />
             </Link>
           </div>
